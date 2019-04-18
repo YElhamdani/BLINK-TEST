@@ -1,0 +1,86 @@
+body{
+    background-color: royalblue;
+}
+
+.sectionBlack{
+    background-color: black;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.blockWhite{
+    width: 55%;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.blockWhite--two{
+    z-index: 1 ;
+    width: 100%;
+    top: -15px;    
+    display: flex;
+    justify-content: center;
+    animation: Topanim 1s;
+    position: absolute;
+
+}@keyframes Topanim{
+    from{
+        transform: translateY(300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+    
+}
+
+video{
+    width:100%;
+}
+
+
+.blockWhite--coffret1{
+    max-width: 100%;
+}
+
+.discovery{
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  font-size: 20px; 
+  font-weight: bold;
+  background-color: #f8da84;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  
+}
+
+.div1{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+
+.div-down{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.div2{
+    display: flex;
+    flex-direction: column;
+    width: 30%
+}
+
+@media  (max-width: 1000px){
+    .blockWhite--two.visible{
+        position: absolute;
+        top: 0;
+    }
+    .div2{
+        display: none;
+    }
+}
